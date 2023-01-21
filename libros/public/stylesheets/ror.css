@@ -1,0 +1,45 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 65% 5% 30%;
+}
+
+.caja2{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.imagen{
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.informacion{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-left: 10%;
+}
+
+.principalimg{
+    width: 50%;
+    padding-top: 15%;
+}
+
+.caja1{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
