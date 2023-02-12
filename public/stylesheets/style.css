@@ -56,7 +56,49 @@ section h2{
 
 nav ul{
     list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "datos ubicacion";
+  }
+  
+.datos {
+    grid-area: datos;
+  }
+  
+.ubicacion {
+    grid-area: ubicacion;
 }
 
 
+iframe{
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    max-height: 100%;
+}
 
+.direccion{
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  label, input, button {
+    flex-basis: 100%;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

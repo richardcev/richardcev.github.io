@@ -113,51 +113,86 @@
 
     <section id="seccioncontactenos" class="seccion">
       <h2>Contáctame</h2>
-      <h3>Sus datos</h3>
 
-      <form>
-        <label for="nombre">Nombres:</label><input type="text" name="nombre"
-          id="nombre">
-        <label for="nombre">Apellidos:</label><input type="text"
-          name="apellidos"
-          id="apellidos"><br>
+      <div class="grid-container">
+        <div class="datos">
+          <h3>Sus datos</h3>
+  
+          <form>
+            <label for="nombre">Nombres:</label><input type="text" name="nombre" id="nombre">
+            <label for="nombre">Apellidos:</label><input type="text" name="apellidos" id="apellidos">
 
-        <label for="edad">Seleccione su rango de edad</label><br>
-        <input type="radio" id="opcion1" name="edad" value="menor25"><label
-          for="opcion1"> menor a 25 años</label>
-        <input type="radio" id="opcion2" name="edad" value="entre26y20"><label
-          for="opcion2"> entre 26 y 30 años</label>
-        <input type="radio" id="opcion3" name="edad" value="mayor31"><label
-          for="opcion3"> mayor a 31 años</label><br><br>
+            <label for="edad">Seleccione su rango de edad</label>
+            <div>
+              <input type="radio" id="opcion1" name="edad" value="menor25">
+              <label for="opcion1"> menor a 25 años</label>
+            </div>
+            <div>
+              <input type="radio" id="opcion2" name="edad" value="entre26y20">
+              <label for="opcion2"> entre 26 y 30 años</label>
+            </div>
+            <div>
+              <input type="radio" id="opcion3" name="edad" value="mayor31">
+              <label for="opcion3"> mayor a 31 años</label>
+            </div>
 
-        <label for="tiposervicio">Seleccione el tipo de servicio a consultar</label><br>
-        <input type="checkbox" name="frontend" id="frontend"><label
-          for="frontend">Frontend Dev</label><br>
-        <input type="checkbox" name="backend" id="backend"><label for="backend">Backend
-          Dev</label><br>
-        <input type="checkbox" name="scrum" id="scrum"><label for="scrum">Desarrollo
-          de software</label><br>
-        <input type="checkbox" name="cicd" id="cicd"><label for="cicd">CI/CD</label><br>
-        <button type="submit">Enviar</button>
-      </form>
+    
+            <label for="tiposervicio">Seleccione el tipo de servicio a consultar</label>
+            <div>
+              <input type="checkbox" name="frontend" id="frontend">
+              <label for="frontend">Frontend Dev</label>
+            </div>
+            <div>
+              <input type="checkbox" name="backend" id="backend">
+              <label for="backend">Backend Dev</label>
+            </div>
+            <div>
+              <input type="checkbox" name="scrum" id="scrum">
+              <label for="scrum">Desarrollo de software</label>
+            </div>
+            <div>
+              <input type="checkbox" name="cicd" id="cicd">
+              <label for="cicd">CI/CD</label>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+  
+        </div>
+  
+        <div class="ubicacion">
+          <h3>Ubicación</h3>
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.013822185924!2d-79.96668418605127!3d-2.1483947984339586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7301d30e8ff5%3A0x73c27660ff5791b!2sCampus%20Gustavo%20Galindo%20Velasco%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1673721190252!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br>
+          </div>
+        </div>
 
-
-      <h3>Ubicación</h3>
-      <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.013822185924!2d-79.96668418605127!3d-2.1483947984339586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7301d30e8ff5%3A0x73c27660ff5791b!2sCampus%20Gustavo%20Galindo%20Velasco%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1673721190252!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <br>
       </div>
-      
+
+
+
+
 
     </section>
 
     <footer>
-      <address>
-        Email: <a href="mailto:CORREO">ridaceva@espol.edu.ec</a><br>
-        Tel: <a href="tel:+TELEFONO">TELEFONO</a><br><br>
-        DIRECCIÓN<br>
-        CIUDAD<br>
-        PAÍS
+      <address class="direccion">
+        <div>
+          Email: <a href="mailto:CORREO">ridaceva@espol.edu.ec</a>
+        </div>
+        <div>
+          Tel: <a href="tel:+TELEFONO">TELEFONO</a>
+        </div>
+        <div>
+          DIRECCIÓN
+        </div>
+        <div>
+          CIUDAD
+        </div>
+        <div>
+          PAÍS
+        </div>
+        
       </address>
     </footer>
 
