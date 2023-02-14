@@ -3,6 +3,19 @@
     font-size: 30px !important;
 }
 
+.testimonio{
+    margin-bottom: 3%;
+}
+
+.comentario{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.contcomentario{
+    height: 300px;
+}
+
 /* .titulo{
     color: #30B8FC !important;
 } */
