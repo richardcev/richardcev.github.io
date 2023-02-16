@@ -74,22 +74,95 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3e%3cpath d='M2.5 0l-1.5 1.5 2 2-2 2 1.5 1.5 3.5-3.5z'/%3e%3c/svg%3e");
   }
 
-  .container .benefecios {
-    max-width: 80%;
-    margin: auto;
-    margin-bottom: 6%;
+
+.textoe{
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.subtitulo{
+    color: white;
+
+}
+
+
+.aprender{
+    text-align: center;
+}
+
+.compu{
+    width: 90%;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
   }
   
-  .benefecios .textobeneficios {
-    font-size: 1em;
-    display: inline-block;
-    max-width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    margin-left: 10%;
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
   }
-
-  .espacio{
-    margin-left: 20% !important;
+  
+  .card .card-title {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
-
+  
+  .card .card-text {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .card .card-img {
+    border-radius: 10px;
+  }
+  
+  .card .card-img-top {
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card .card-body {
+    padding: 0;
+  }
+  
+  .card .btn {
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    .card {
+      padding: 10px;
+    }
+  
+    .card .card-img-top {
+      max-height: 200px;
+    }
+  
+    .card .card-title {
+      font-size: 20px;
+    }
+  
+    .card .card-text {
+      font-size: 14px;
+    }
+  
+    .card .btn {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
+  
