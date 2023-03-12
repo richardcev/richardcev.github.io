@@ -5,7 +5,6 @@ const runcScripts = () =>{
     console.log(icons)
     let cards= document.getElementsByClassName("card")
     console.log(cards)
-
 }
 
 const modifyTest= () =>{
