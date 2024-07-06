@@ -1,0 +1,193 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    padding-top: 80px;
+}
+
+
+.padre > * {
+    width: 70%;
+    max-width: 1000px; /* Ancho máximo para las secciones */
+    margin: 0 auto; /* Centra los elementos horizontalmente */
+}
+
+
+h1, h2{
+    padding:0;
+    margin:0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    width: 70%;
+    max-width: 1000px;
+    z-index: 1000;
+    background-color: #121212;
+}
+
+
+.nombre{
+    margin-top: 12px;
+    color: #fff;
+}
+
+.titulo{
+    color: #b3b3b3;
+}
+
+.descripcion{
+    color: #b3b3b3;
+    line-height: 30px;
+}
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin:0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+.project {
+    background-color: #1e1e1e; /* Fondo de las tarjetas */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 400px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+
+.project:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .project p {
+    color: #b3b3b3;
+    line-height: 30px;
+  }
+  
+  .project img {
+    max-width: 70%;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .project a {
+    display: inline-block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #28a745; /* Color del botón */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  .project a:hover {
+    background-color: #218838; /* Color del botón al pasar el mouse */
+  }
+
+
+#skills {
+    padding: 20px;
+}
+
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.skill-card {
+    width: 120px;
+    padding: 10px;
+    margin: 15px;
+    background-color: #121212;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 3px solid #333333;
+    display: flex;
+    
+}
+
+
+.skill-card img {
+    max-width: 30px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.skill-card p {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 0 0 10px;
+}
+
+.principal{
+    display: flex;
+    gap: 40px;
+    
+}
+
+.principal img{
+    margin-top: 20px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 100px;
+
+}
+
+.email{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}

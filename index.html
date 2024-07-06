@@ -1,202 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/stylesheets/style.css" />
-    <title>Curriculum Vitae</title>
-  </head>
-
-  <body>
-
-    <header>
-      <h1>Curriculum Vitae</h1>
-    </header>
-
-    <!-- Nav: Inicio -->
-    <nav>
-      <ul>
-        <li><a href="#secciondatos">Datos Personales</a></li>
-        <li><a href="#seccionredes">Redes Sociales</a></li>
-        <li><a href="#seccionhabilidades">Habilidades</a></li>
-        <li><a href="#secciongaleria">Galería</a></li>
-        <li><a href="#seccioncontactenos">Contáctenos</a></li>
-      </ul>
-    </nav>
-    <!-- Nav: Fin -->
-
-    <section id="secciondatos" class="seccion">
-      <h2>Datos personales</h2>
-      <span>Nombres:</span>
-      <span>Richard Cevallos</span>
-      <br>
-      <span>Apellidos:</span>
-      <span>Cevallos Apolo</span>
-
-      <p>¡Hola! Soy Richard Cevallos, con experiencia en desarrollo web en front end y
-        back end. Participo en todas las etapas
-        del ciclo de desarrollo de proyectos web dinámicos. Además, tengo
-        sólidos conocimientos en gestión de proyectos
-        y relaciones con los clientes.</p>
-
-    </section>
-
-    <section id="seccionredes" class="seccion">
-      <h2>Redes sociales</h2>
-
-      <span><a href="https://www.linkedin.com/">LinkedIn</a></span>
-      <span><a href="https://github.com/">Github</a></span>
-
-    </section>
-
-    <section id="seccionhabilidades" class="seccion">
-      <h2>Habilidades Profesionales</h2>
-      <ul>
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>ReactJS</li>
-        <li>Django</li>
-        <li>Express</li>
-      </ul>
-
-      <h2>Idiomas</h2>
-      <table>
-        <caption>Habilidad en idiomas</caption>
-        <tr>
-          <th></th>
-          <th>Básico</th>
-          <th>Intermedio</th>
-          <th>Avanzado</th>
-          <th>Nativo</th>
-        </tr>
-        <tr>
-          <th>Inglés</th>
-          <td></td>
-          <td></td>
-          <td>X</td>
-          <td></td>
-        </tr>
-        <tr>
-          <th>Español</th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>X</td>
-        </tr>
-      </table>
-
-      <h2>Contenidos Transversales</h2>
-      <ol>
-        <li>Docker</li>
-        <li>AWS</li>
-        <li>CI/CD</li>
-        <li>Scrum</li>
-      </ol>
-    </section>
-
-    <aside id="secciongaleria" class="seccion">
-      <img src="public/images/reading.jpg" alt="Reading" width="30%">
-      <img
-        src="https://cdn.pixabay.com/photo/2015/05/29/19/18/cafe-789635_960_720.jpg"
-        alt="Foto de colaboración" width="30%">
-
-    </aside>
-
-    <section id="seccionestudios" class="seccion">
-      <h2>Estudios</h2>
-      <span>Secundaria: </span>
-      <span>Espiritu Santo</span> <br>
-      <span >Tercer nivel: </span>
-      <span>Escuela Superior Politécnica del Litoral</span>
-    </section>
-
-    <section id="seccioncontactenos" class="seccion">
-      <h2>Contáctame</h2>
-
-      <div class="grid-container">
-        <div class="datos">
-          <h3>Sus datos</h3>
-  
-          <form>
-            <label for="nombre">Nombres:</label><input type="text" name="nombre" id="nombre">
-            <label for="nombre">Apellidos:</label><input type="text" name="apellidos" id="apellidos">
-
-            <label for="edad">Seleccione su rango de edad</label>
-            <div>
-              <input type="radio" id="opcion1" name="edad" value="menor25">
-              <label for="opcion1"> menor a 25 años</label>
-            </div>
-            <div>
-              <input type="radio" id="opcion2" name="edad" value="entre26y20">
-              <label for="opcion2"> entre 26 y 30 años</label>
-            </div>
-            <div>
-              <input type="radio" id="opcion3" name="edad" value="mayor31">
-              <label for="opcion3"> mayor a 31 años</label>
-            </div>
-
+    <title>Portafolio de Desarrollador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
     
-            <label for="tiposervicio">Seleccione el tipo de servicio a consultar</label>
+    <nav>
+        <p class="logo">R</p>
+        <div>
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="padre">
+        <div class="principal">
             <div>
-              <input type="checkbox" name="frontend" id="frontend">
-              <label for="frontend">Frontend Dev</label>
+                <img src="public\images\fotocv.jpg">
             </div>
             <div>
-              <input type="checkbox" name="backend" id="backend">
-              <label for="backend">Backend Dev</label>
+                <h1 class="nombre">Richard Cevallos</h1>
+                <span class="titulo">Ingeniero en computación</span>
             </div>
-            <div>
-              <input type="checkbox" name="scrum" id="scrum">
-              <label for="scrum">Desarrollo de software</label>
-            </div>
-            <div>
-              <input type="checkbox" name="cicd" id="cicd">
-              <label for="cicd">CI/CD</label>
-            </div>
-            <button type="submit">Enviar</button>
-          </form>
-  
-        </div>
-  
-        <div class="ubicacion">
-          <h3>Ubicación</h3>
-          <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.013822185924!2d-79.96668418605127!3d-2.1483947984339586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7301d30e8ff5%3A0x73c27660ff5791b!2sCampus%20Gustavo%20Galindo%20Velasco%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1673721190252!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <br>
-          </div>
-        </div>
-
-      </div>
-
-
-
-
-
-    </section>
-
-    <footer>
-      <address class="direccion">
-        <div>
-          Email: <a href="mailto:CORREO">ridaceva@espol.edu.ec</a>
-        </div>
-        <div>
-          Tel: <a href="tel:+TELEFONO">TELEFONO</a>
-        </div>
-        <div>
-          DIRECCIÓN
-        </div>
-        <div>
-          CIUDAD
-        </div>
-        <div>
-          PAÍS
         </div>
         
-      </address>
+        <section id="about">
+            <h2>Sobre Mí</h2>
+            <p class="descripcion">Soy ingeniero en computación con amplia experiencia en
+            desarrollo web tanto en front end como en back end.
+            Poseo habilidades integrales que abarcan todas las fases del ciclo
+            de desarrollo de proyectos web dinámicos. Si estás
+            buscando un profesional para llevar a cabo tu proyecto de 
+            desarrollo web, no dudes en contactarme.</p>
+        </section>
+        <h2>Proyectos</h2>
+        <section id="projects">
+            <div class="project">
+                <h3>Telconet Latam</h3>
+                <p>Actualmente, me desempeño como Full Stack Developer en Telconet, donde aplico tecnologías
+                como JavaScript, Python, React, Django, MongoDB y Docker.</p>
+                <img src="public\images\telconet.png" class="imgproyect"/>
+                <a href="#">Ver más</a>
+            </div>
+            <div class="project">
+                <h3>Central File</h3>
+                <p>En Central File, trabajé como desarrollador Frontend, especializándome en React para el desarrollo de
+                interfaces y utilizando Redux para la gestión del estado.</p>
+                <img src="public\images\central.jpg" />
+                <a href="#">Ver más</a>
+            </div>
+            <div class="project">
+                <h3>ESPOL</h3>
+                <p>Trabajé en la universidad ESPOL como ayudante en desarrollo de software tanto en una página web hecha en Drupal como en una aplicación
+                    web con react y django. </p>
+                <img src="public\images\espol.jpg" />
+                <a href="#">Ver más</a>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="skill-cards">
+                <div class="skill-card">
+                    <img src="public\images\Python-logo-notext.svg.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill-card">
+                    <img src="public\images\javascript.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <img src="public\images\react.png" alt="React Js">
+                    <p>React Js</p>
+                </div>
+                <div class="skill-card">
+                    <img src="public\images\django-badge.png" alt="Django">
+                    <p>Django</p>
+                </div>
+                <div class="skill-card">
+                    <img src="public\images\docker.jpg" alt="Django">
+                    <p>Docker</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Email: <a href="mailto:tucorreo@ejemplo.com" class="email">rcevallosapolo@gmail.com</a></p>
+            <p>Teléfono: 09808185987</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Richard Cevallos</p>
     </footer>
-
-    
-
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
