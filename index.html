@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<script>
+    function toggleMenu() {
+    var menuItems = document.querySelector('.menu-items');
+    menuItems.classList.toggle('show');
+    }
+
+</script>
 <body>
     
     <nav>
         <p class="logo">R</p>
-        <div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-items">
             <ul>
                 <li><a href="#about">Sobre Mí</a></li>
                 <li><a href="#projects">Proyectos</a></li>
@@ -22,17 +30,17 @@
     </nav>
     <div class="padre">
         <div class="principal">
-            <div>
+            <div class="img-container">
                 <img src="public\images\fotocv.jpg">
             </div>
-            <div>
-                <h1 class="nombre">Richard Cevallos</h1>
+            <div class="text-container">
+                <h2 class="nombre">Richard Cevallos</h2>
                 <span class="titulo">Ingeniero en computación</span>
             </div>
         </div>
         
         <section id="about">
-            <h2>Sobre Mí</h2>
+            <h3>Sobre Mí</h3>
             <p class="descripcion">Soy ingeniero en computación con amplia experiencia en
             desarrollo web tanto en front end como en back end.
             Poseo habilidades integrales que abarcan todas las fases del ciclo
@@ -40,24 +48,58 @@
             buscando un profesional para llevar a cabo tu proyecto de 
             desarrollo web, no dudes en contactarme.</p>
         </section>
-        <h2>Proyectos</h2>
+        <h3>Servicios</h3>
+        <section id="services">
+            
+            <div class="service" id="serviceContainer">
+                <div class="content">
+                    <h4>Desarrollo web</h4>
+                    <p class="pservice">Ofrezco servicios completos de desarrollo web,
+                    desde la planificación hasta el mantenimiento.
+                    Mis habilidades incluyen front-end y back-end con
+                    tecnologías modernas como HTML5, CSS3, JavaScript, Django,
+                    React y Angular.</p>
+                    <button>Contrátame</button>
+                </div>
+
+                <div>
+                    <img src="public/images/desarrolloweb.jpeg" alt="Desarrollo web">
+                </div>
+            </div>
+            
+            <div class="service">
+
+                <div>
+                    <h4>Desarrollo móvil</h4>
+                    <p class="pservice">Proporciono soluciones de desarrollo móvil
+                        para iOS y Android, creando aplicaciones nativas
+                        con Swift y Kotlin/Java, y multiplataforma
+                        con React Native y Flutter. 
+                        Diseño experiencias de usuario excepcionales.</p> 
+                    <button>Contrátame</button>
+                </div>
+                <img src="public\images\movil.jpg" /> 
+            </div>
+
+        </section>
+        <h3>Proyectos</h3>
         <section id="projects">
             <div class="project">
-                <h3>Telconet Latam</h3>
+                <h4>Telconet Latam</h4>
                 <p>Actualmente, me desempeño como Full Stack Developer en Telconet, donde aplico tecnologías
                 como JavaScript, Python, React, Django, MongoDB y Docker.</p>
                 <img src="public\images\telconet.png" class="imgproyect"/>
                 <a href="#">Ver más</a>
             </div>
             <div class="project">
-                <h3>Central File</h3>
+                <h4>Central File</h4>
                 <p>En Central File, trabajé como desarrollador Frontend, especializándome en React para el desarrollo de
                 interfaces y utilizando Redux para la gestión del estado.</p>
                 <img src="public\images\central.jpg" />
                 <a href="#">Ver más</a>
             </div>
             <div class="project">
-                <h3>ESPOL</h3>
+                <h4>ESPOL</h4>
                 <p>Trabajé en la universidad ESPOL como ayudante en desarrollo de software tanto en una página web hecha en Drupal como en una aplicación
                     web con react y django. </p>
                 <img src="public\images\espol.jpg" />
@@ -65,7 +107,7 @@
             </div>
         </section>
         <section id="skills">
-            <h2>Habilidades</h2>
+            <h3>Habilidades</h3>
             <div class="skill-cards">
                 <div class="skill-card">
                     <img src="public\images\Python-logo-notext.svg.png" alt="Python">
@@ -91,7 +133,7 @@
         </section>
         
         <section id="contact">
-            <h2>Contacto</h2>
+            <h3>Contacto</h3>
             <p>Email: <a href="mailto:tucorreo@ejemplo.com" class="email">rcevallosapolo@gmail.com</a></p>
             <p>Teléfono: 09808185987</p>
         </section>
